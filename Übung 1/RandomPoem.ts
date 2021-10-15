@@ -7,6 +7,7 @@ namespace MusicPoem {
         let finalsentence: string = getVerse(noun, verb, object);
         console.log(finalsentence);
     }
+
     function getVerse(_noun: string[], _verb: string[], _object: string[]): string {
 
         let randomNumbernoun: number = Math.floor(Math.random() * _noun.length);
