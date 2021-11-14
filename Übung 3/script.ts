@@ -28,6 +28,24 @@ namespace Sequenzmemory {
     document.addEventListener("keydown", Hilfe);
     }
     
+    function groesse(_event: MouseEvent): void {
+        let clickedButton: HTMLElement = <HTMLElement> _event.target;
+        let auswahlgroesse: HTMLSpanElement = document.querySelector("#auswahl_groesse");
+        auswahlgroesse.innerHTML = clickedButton.textContent;
+    }
+    
+    function farbe(_event: MouseEvent): void {
+        let clickedButton: HTMLElement = <HTMLElement> _event.target;
+        let auswahlfarbe: HTMLSpanElement = document.querySelector("#auswahl_farbe");
+        auswahlfarbe.innerHTML = clickedButton.textContent;
+    }
+    
+    function schriftart(_event: MouseEvent): void {
+        let clickedButton: HTMLElement = <HTMLElement> _event.target;
+        let auswahlschriftart: HTMLSpanElement = document.querySelector("#auswahl_schriftart");
+        auswahlschriftart.innerHTML = clickedButton.textContent;
+    }
+    
     function Spielzeit(_event: MouseEvent): void {
         let clickedButton: HTMLElement = <HTMLElement> _event.target;
         let auswahlspielzeit: HTMLSpanElement = document.querySelector("#auswahl_spielzeit");
